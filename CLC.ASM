@@ -63,7 +63,7 @@ start:
      mov ah,09h
      int 21h
 
-     mov ah,01h ;pobiera dane
+     mov ah,01h
      int 21h
      cmp al, '1'
      je dodaj
@@ -243,9 +243,9 @@ codalej:
 
      mov ah,01h
      int 21h
-     cmp al,0dh ;enter
+     cmp al,0dh
      je start
-     cmp al,1bh ;esc
+     cmp al,1bh
      je koniec
 
 nowa:
